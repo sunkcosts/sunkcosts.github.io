@@ -1,6 +1,6 @@
 # Contact
 
-<form target="_blank" action="https://formsubmit.co/09lodges-bureaus@icloud.com" method="POST">
+<form target="_blank" action="https://formsubmit.co/158a4083e39ad06964c9904d4c6ed0f1" method="POST">
   <div class="form-group">
     <div class="form-row">
       <input type="text" name="name" class="form-control" placeholder="Name" style="width: 100%; background-color: #111319; padding: 8px; border-radius: 8px; font-size: 1em;" required>
