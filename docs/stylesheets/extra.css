@@ -14,7 +14,7 @@ body {
     --md-code-hl-variable-color: rgb(237, 178, 77);
 }
 
-p {
+p, ol, ul {
     text-align: justify;
     line-height: 1.28em;
     font-size: 14px;
