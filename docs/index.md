@@ -1,14 +1,22 @@
+---
+hide:
+- navigation
+---
+<!-- <style>
+    .md-nav--primary .md-nav__list {
+        display: none;
+    }
+</style> -->
 
+# About
 
-# Sunk Costs
-
-<p style="text-align: left; font-size: 22px; color:#FDAF49; position: relative; top: -24px; margin-bottom: -24px;">Forecasting the Economic Impact of Sea Level Rise on Miami</p>
+<p style="text-align: left; font-size: 26px; color:#F99B54; position: relative; top: -16px; margin-bottom: -16px; font-weight: bold;">Forecasting the Economic Impact of Sea Level Rise on Miami</p>
 
 Hart Traveller, Luke Moloney
 
-## Abstract
+## Summary
 
-Abstract: TODO
+TODO: Summary of project and useful resources.
 
 - Streamlit app
 - github organization
@@ -16,8 +24,8 @@ Abstract: TODO
 
 ## Context
 
-This analysis was performed to inform a proposal presented at the [New Worlds](https://www.eventcreate.com/e/new-worlds#:~:text=Discussion%20%2D%20Project%3A%20EarthShade,safely%3F%20Let%27s%20discuss.) conference. For more information on this, see the [EarthShade](earthshade.md) page. You can reach out to the authors via the [contact](contact.md) page.</p>
+This analysis informed a proposal presented at the [New Worlds](https://www.eventcreate.com/e/new-worlds#:~:text=Discussion%20%2D%20Project%3A%20EarthShade,safely%3F%20Let%27s%20discuss.) conference. For more information on this, see the [EarthShade](earthshade.md) page.
 
-## Reproducibility
+## Code
 
-You can find all code in the [GitHub](https://github.com/sunkcosts) organization. More information on individual repositories is available on the. If you find an issue with the methodology please submit a [GitHub]() issue, or start a thread on the GitHub [discussions]() page and we will attempt to address it (time permitting).
+For the purpose of reproducibility, the [code](https://github.com/sunkcosts) used for the analysis is open source. If you find an issue with the methodology please submit a GitHub issue in the appropriate repository and we will address it time permitting.
