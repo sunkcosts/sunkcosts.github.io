@@ -37,5 +37,5 @@ markdown_extensions:
 
 nav:
 - About: "index.md"
-- EarthShade: "earthshade.md"
-- Contact: "contact.md"
+# - EarthShade: "earthshade.md"
+# - Contact: "contact.md"
