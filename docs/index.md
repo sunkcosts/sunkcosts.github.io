@@ -22,10 +22,14 @@ In this report we seek to forecast the economic impact of sea level rise (SLR) o
 - conclusion
 - key points -->
 
-## Resources
+The full report, including interactive visualizations and models, can be found on this site in the [report](report/introduction.md) section.
+
+## Sections
 TODO: Summary of project and useful resources.
 
-<!-- - Streamlit app
+<!--
+- Streamlit app
+- models
 - github organization
 - visualizations
 - references
@@ -34,4 +38,7 @@ TODO: Summary of project and useful resources.
 
 ## Code
 
-For the purpose of reproducibility, the [code](https://github.com/sunkcosts) used for the analysis is open source. Caveats have been included where the methodology had a suboptimal level of analytical rigor. You can submit a GitHub issue in the relevant repository if you find issues and we'll attempt to address them time permitting.
+For the purpose of reproducibility, the [code](https://github.com/sunkcosts) used for the analysis is open source. Caveats have been included where the methodology had suboptimal analytical rigor. You can submit a GitHub issue in the relevant repository if you find any inaccuracies and we'll attempt to address them time permitting.
+
+
+## Citation

@@ -39,13 +39,15 @@ markdown_extensions:
 nav:
 - About: "index.md"
 - Report:
-  - Introduction: "introduction.md"
+  - Introduction: "report/introduction.md"
 - Resource:
+  - Index: "resource/index.md"
   - Conference: "resource/conference.md"
   - Model: "resource/model.md"
   - Repository: "resource/repository.md"
   - Dataset: "resource/dataset.md"
 - Reference:
+  - Index: "reference/index.md"
   - Publication: "reference/publication.md"
   - Dataset: "reference/dataset.md"
   - Package: "reference/package.md"
