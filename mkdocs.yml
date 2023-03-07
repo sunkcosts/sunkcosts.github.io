@@ -8,8 +8,8 @@ plugins:
 theme:
   name: material
   custom_dir: overrides
-  logo: assets/logos/miamilost-logo-small.png
-  favicon: assets/logos/miamilost-logo.png
+  logo: assets/logos/sunkcosts-logo-small.png
+  favicon: assets/logos/sunkcosts-logo.png
   icon:
     repo: fontawesome/brands/github
   palette:
