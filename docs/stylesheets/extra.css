@@ -65,14 +65,9 @@ h2 {
     background: black;
 }
 
-/* h1 {
-    display: none;
-} */
-
 .md-nav__list {
     background-color: black !important;
     position: relative;
-    top: -10px;
 }
 
 .md-nav__title[for="__toc"] {
