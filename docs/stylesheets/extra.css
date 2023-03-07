@@ -80,3 +80,13 @@ h1, h2, h3, h4, h5, h6 {
     position: relative;
     top: -40px;
 }
+
+.md-clipboard {
+    color: grey !important;
+    transition: ease 0.3s !important;
+}
+
+.md-clipboard:hover {
+    color: rgb(237, 178, 77) !important;
+    transition: ease 0.3s !important;
+}

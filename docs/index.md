@@ -2,15 +2,10 @@
 hide:
 - navigation
 ---
-<!-- <style>
-    .md-nav--primary .md-nav__list {
-        display: none;
-    }
-</style> -->
 
 # About
 
-<p style="text-align: left; font-size: 26px; color:#F99B54; position: relative; top: 20px; margin-bottom: 32px; font-weight: bold;">Forecasting the Economic Impact of Sea Level Rise on Miami</p>
+<p style="text-align: left; font-size: 26px; color:#F99B54; position: relative; top: 20px; margin-bottom: 32px; font-weight: bold;">Sunk Costs: Forecasting the Economic Impact of Sea Level Rise on Miami</p>
 
 Hart Traveller, Luke Moloney
 
@@ -42,3 +37,14 @@ For the purpose of reproducibility, the [code](https://github.com/sunkcosts) use
 
 
 ## Citation
+
+```bibtex
+@misc{SC-TM-2023,
+    title = {Sunk Costs},
+    subtitle = {Forecasting the Economic Impact of Sea Level Rise on Miami},
+    author = {Hart Traveller and Luke Moloney},
+    year = {2023},
+    howpublished = {Available at \url{https://sunkcosts.github.io}
+}
+```
+
