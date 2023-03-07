@@ -6,8 +6,8 @@ plugins:
 theme:
   name: material
   custom_dir: overrides
-  logo: assets/logos/github.png
-  favicon: assets/logos/sunkcosts-logo-small.png
+  logo: assets/logos/sunk-costs-logo-small.png
+  favicon: assets/logos/sunk-costs-logo-small.png
   palette:
     scheme: slate
     primary: black
@@ -16,6 +16,7 @@ theme:
   - header.autohide
   - navigation.instant
   - navigation.tracking
+  - navigation.tabs
 
 extra_css:
 - stylesheets/extra.css
@@ -37,5 +38,9 @@ markdown_extensions:
 
 nav:
 - About: "index.md"
-# - EarthShade: "earthshade.md"
-# - Contact: "contact.md"
+- Report:
+  - Introduction: "introduction.md"
+- Resources:
+  - Repositories: "repositories.md"
+  - EarthShade: "earthshade.md"
+- Contact: "contact.md"
