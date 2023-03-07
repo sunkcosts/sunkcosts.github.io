@@ -39,9 +39,16 @@ markdown_extensions:
 nav:
 - About: "index.md"
 - Report:
-  - Overview: "overview.md"
   - Introduction: "introduction.md"
-- Resources:
-  - Repositories: "repositories.md"
-  - EarthShade: "earthshade.md"
+- Resource:
+  - Conference: "resource/conference.md"
+  - Model: "resource/model.md"
+  - Repository: "resource/repository.md"
+  - Dataset: "resource/dataset.md"
+- Reference:
+  - Publication: "reference/publication.md"
+  - Dataset: "reference/dataset.md"
+  - Package: "reference/package.md"
+  - Service: "reference/service.md"
+  - Tool: "reference/tool.md"
 - Contact: "contact.md"

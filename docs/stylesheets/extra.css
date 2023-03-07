@@ -20,6 +20,7 @@ p, ol, ul {
     font-size: 14px;
 }
 
+
 h1 {
     display: none;
 }
@@ -73,4 +74,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .md-nav__title[for="__toc"] {
     display: none;
+}
+
+.md-content {
+    position: relative;
+    top: -40px;
 }
