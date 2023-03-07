@@ -1,3 +1,0 @@
-# Resource: Application
-
-streamlit app

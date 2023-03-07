@@ -2,6 +2,7 @@ site_name: Sunk Costs
 
 plugins:
 - search
+- glightbox
 
 theme:
   name: material
@@ -16,7 +17,7 @@ theme:
   - header.autohide
   - navigation.instant
   - navigation.tracking
-  - navigation.tabs
+  # - navigation.tabs
   - content.code.copy
 
 extra_css:
@@ -25,6 +26,7 @@ extra_css:
 markdown_extensions:
 - md_in_html
 - admonition
+- attr_list
 - pymdownx.details
 - pymdownx.inlinehilite
 - pymdownx.snippets
@@ -39,19 +41,9 @@ markdown_extensions:
 
 nav:
 - About: "index.md"
-- Report:
-  - Introduction: "report/introduction.md"
-- Resource:
-  - Index: "resource/index.md"
-  - Conference: "resource/conference.md"
-  - Model: "resource/model.md"
-  - Repository: "resource/repository.md"
-  - Dataset: "resource/dataset.md"
-- Reference:
-  - Index: "reference/index.md"
-  - Publication: "reference/publication.md"
-  - Dataset: "reference/dataset.md"
-  - Package: "reference/package.md"
-  - Service: "reference/service.md"
-  - Tool: "reference/tool.md"
+- Report: "report.md"
+- Model: "model/note.md"
+- Conference: "conference.md"
+- Resources: "resources.md"
+- References: references.md"
 - Contact: "contact.md"
