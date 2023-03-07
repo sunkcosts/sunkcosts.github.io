@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Inter');
+
+body {
+    --md-text-font-family: "Inter";
+}
+
 :root>* {
     --md-code-hl-string-color: #37d278;
     --md-code-hl-name-color: rgb(237, 154, 149);
@@ -10,6 +16,21 @@
 
 p {
     text-align: justify;
+    line-height: 1.28em;
+    font-size: 14px;
+}
+
+h1 {
+    line-height: 0em !important;
+    padding-bottom: 0.32em;
+    padding-top: 0.64em;
+}
+
+
+h2 {
+    line-height: 0em !important;
+    padding-bottom: 0.32em;
+    padding-top: 0.64em;
 }
 
 .md-source__facts {
@@ -27,7 +48,9 @@ p {
 
 .md-main {
     background-color: black;
+    line-height: 0.8em !important;
 }
+
 
 .md-nav__link, .md-nav__title {
     background-color: black !important;
@@ -38,6 +61,20 @@ p {
     display: none;
 }
 
-.md-footer__inner.md-grid {
+.md-footer {
+    background: black;
+}
+
+/* h1 {
+    display: none;
+} */
+
+.md-nav__list {
+    background-color: black !important;
+    position: relative;
+    top: -10px;
+}
+
+.md-nav__title[for="__toc"] {
     display: none;
 }
