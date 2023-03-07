@@ -158,3 +158,17 @@ h6 {
     position: relative;
     top: -36px !important;
 }
+
+.contact-submit {
+    background-color: #111319;
+    border: 1px transparent solid;
+    /* color: white; */
+    transition: ease 0.3s !important;
+}
+
+.contact-submit:hover {
+    border: 1px white solid;
+    /* background-color: white; */
+    color: orange;
+    /* transition: 0.3s !important; */
+}

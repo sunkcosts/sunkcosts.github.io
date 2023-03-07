@@ -6,7 +6,9 @@
 
 <p style="text-align: center; font-size: 24px; color:grey; position: relative; top: -20px; margin-bottom: -16px;">Forecasting the Economic Impact of Sea Level Rise on Miami</p>
 
-This site contains an interactive [report](report.md) with the aim of forecasting the economic impact of sea level rise on Miami. The [model](model/note.md) produced is included as an embedded app which allows you to adjust parameters and see how this effects the outcome. This analysis was completed as a dependency for a larger project, more information on which can be found on the [conference](conference.md) page.
+Site is currently under development.
+
+<!-- This site contains an interactive [report](report.md) with the aim of forecasting the economic impact of sea level rise on Miami. The [model](model/note.md) produced is included as an embedded app which allows you to adjust parameters and see how this effects the outcome. This analysis was completed as a dependency for a larger project, more information on which can be found on the [conference](conference.md) page.
 
 For the purpose of reproducibility, the [code](https://github.com/sunkcosts) used for the analysis is open source. You can submit a GitHub issue in the relevant repository if you find any inaccuracies and we'll attempt to address them time permitting.
 
@@ -19,4 +21,4 @@ For the purpose of reproducibility, the [code](https://github.com/sunkcosts) use
     howpublished = {Available at \url{https://sunkcosts.github.io}
 }
 ```
-
+ -->

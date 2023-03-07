@@ -41,9 +41,9 @@ markdown_extensions:
 
 nav:
 - About: "index.md"
-- Report: "report.md"
-- Model: "model/note.md"
-- Conference: "conference.md"
-- Resources: "resources.md"
-- References: references.md"
+# - Report: "report.md"
+# - Model: "model/note.md"
+# - Conference: "conference.md"
+# - Resources: "resources.md"
+# - References: references.md"
 - Contact: "contact.md"
