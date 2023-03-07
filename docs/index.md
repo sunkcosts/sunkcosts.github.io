@@ -10,7 +10,6 @@ Hart Traveller, Luke Moloney
 
 Abstract: TODO
 
-## Overview
 - Streamlit app
 - github organization
 - visualizations
