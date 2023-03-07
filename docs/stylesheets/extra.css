@@ -21,13 +21,14 @@ p, ol, ul {
 }
 
 h1 {
-    line-height: 0em !important;
-    padding-bottom: 0.32em;
-    padding-top: 0.64em;
+    display: none;
 }
 
+a {
+    transition: ease 0.3s !important;
+}
 
-h2 {
+h1, h2, h3, h4, h5, h6 {
     line-height: 0em !important;
     padding-bottom: 0.32em;
     padding-top: 0.64em;
@@ -47,13 +48,13 @@ h2 {
 }
 
 .md-main {
-    background-color: black;
+    background-color: #111319;
     line-height: 0.8em !important;
 }
 
 
 .md-nav__link, .md-nav__title {
-    background-color: black !important;
+    background-color: #111319 !important;
     box-shadow: none !important;
 }
 
@@ -62,11 +63,11 @@ h2 {
 }
 
 .md-footer {
-    background: black;
+    background: #111319;
 }
 
 .md-nav__list {
-    background-color: black !important;
+    background-color: #111319 !important;
     position: relative;
 }
 
