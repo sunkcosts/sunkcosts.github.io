@@ -7,7 +7,7 @@ plugins:
 theme:
   name: material
   custom_dir: overrides
-  logo: assets/logos/fingerprint.svg
+  logo: assets/logos/sunshade.png
   favicon: assets/logos/sunk-costs-logo-small.png
   palette:
     scheme: slate
