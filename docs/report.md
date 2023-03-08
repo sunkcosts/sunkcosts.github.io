@@ -319,3 +319,5 @@ This works out to a cost of $855,000,000.
 
 
 In this analysis we attempt to estimate the economic impact of sea level rise on the city of Miami. We do this through a meta-analysis of existing literature, which we use to fit several non-linear models of sea level rise (SLR). This allows us to establish optimistic, neutral, and pessimistic scenarios for the sea level by 2100. We animate these scenarios using topographical and image satellite data. We then use these estimates to inform an economic model to estimate costs.
+
+todo - make a note about how wide margins of uncertainty don't invalidate models, rejecting something because it isn't perfectly accurate, or can't perfectly predict the future is a recipe for failure, and if an analytical model can't make a great prediction, a subjective intuitive model, 95%+ percent of the time will be far, far less accurate.,
