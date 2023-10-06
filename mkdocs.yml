@@ -1,4 +1,6 @@
 site_name: Sunk Costs
+site_url: https://sunkcosts.github.io
+docs_dir: website
 
 plugins:
 - search
