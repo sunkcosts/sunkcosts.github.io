@@ -1,0 +1,19 @@
+<div class="md-quick">
+    {% for quicklink in config.extra.quicklinks %}
+    {% set title = quicklink.name %}
+        {% if "mailto:" in quicklink.link %}
+            {%set rel = ""}
+            {% set url = quicklink.link %}
+        {% else %}
+            {% set rel = "noopener" %}
+            {% if not title and "//" in quicklink.link %}
+            {% set _, url = quicklink.link.split("//") %}
+            {% set title = url.split("/")[0] %}
+        {% endif %}
+    <div>
+        <a href="{{ quicklink.link }}" target="_blank" rel="{{ rel }}" title="{{ title | e }}" class="md-quick__link">
+            {% include ".icons/" ~ quicklink.icon ~ ".svg" %}
+        </a>
+    </div>
+    {% endfor %}
+</div>
