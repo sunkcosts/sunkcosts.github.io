@@ -1,0 +1,48 @@
+[tool.poetry]
+name = "sunklib"
+version = "0.1.0"
+description = "Collection of utilities, app, and model, for Sunk Costs project."
+readme = "README.md"
+repository = "https://github.com/sunkcosts"
+documentation = "https://sunkcosts.github.io"
+authors = [
+    "Hart Traveller <guider.adopt0l@icloud.com>",
+    "Luke Moloney <NA>"
+]
+maintainers = [
+    "Hart Traveller <guider.adopt0l@icloud.com>",
+]
+
+[tool.poetry.dependencies]
+python = ">3.9.7"
+streamlit = "^1.27.2"
+watchdog = "^3.0.0"
+
+[tool.poetry.group.docs]
+optional = true
+
+[tool.poetry.group.docs.dependencies]
+mkdocs-material = "^9.4.2"
+mkdocstrings = "^0.23.0"
+mkdocs-click = "^0.8.1"
+mkdocs-glightbox = "^0.3.4"
+mkdocs-roamlinks-plugin = "^0.3.2"
+
+[tool.poetry.group.dev]
+optional = true
+
+[tool.poetry.group.dev.dependencies]
+jupyter = "^1.0.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[[tool.poetry.source]]
+name = "PyPI"
+priority = "primary"
+
+[tool.poetry.scripts]
+scli = "sunklib.cli:CLI"
+
+

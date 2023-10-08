@@ -1,3 +1,0 @@
-- disclaimer model is not perfect and being worked on
-- disclaimer that app is hosted on streamlit free version, so if many other people are looking at it, then it may be overloaded and non-functional. the app size was minimized to account for this, but it will not be perfect
-- if this is the case, you can clone the app [here] and run it on your local machine

@@ -1,34 +1,49 @@
-site_name: Sunk Costs
-site_url: https://sunkcosts.github.io
-docs_dir: website
 
-plugins:
-- search
-- glightbox
+site_name: Sunk Costs
+docs_dir: website
+site_url: https://sunkcosts.github.io
 
 theme:
   name: material
-  custom_dir: overrides
-  logo: assets/logos/sunshade.png
-  favicon: assets/logos/sunk-costs-logo-small.png
+  favicon: "file/image.logo.sunkcosts.icon.png"
+  logo: "file/anim.logo.fast.loop.gif"
+  logo_url: "/"
+  logo_tooltip: ""
+  custom_dir: website/static/custom
+  icon:
+    annotation: material/plus-circle
+  font:
+    text: Inter
   palette:
     scheme: slate
     primary: black
     accent: orange
   features:
-  - header.autohide
-  - navigation.instant
-  - navigation.tracking
-  # - navigation.tabs
+  - search.suggest
   - content.code.copy
+  - content.code.annotate
+  - navigation.tracking
+  - navigation.tabs
+  - navigation.tabs.sticky
+  - navigation.indexes
+  - navigation.top
+  - navigation.expand
+  - navigation.instant
 
-extra_css:
-- stylesheets/extra.css
+plugins:
+- search
+- glightbox:
+    skip_classes:
+    - skip-lightbox
+- roamlinks
+- mkdocstrings
 
 markdown_extensions:
+- attr_list
 - md_in_html
 - admonition
-- attr_list
+- footnotes
+- mkdocs-click
 - pymdownx.details
 - pymdownx.inlinehilite
 - pymdownx.snippets
@@ -40,12 +55,72 @@ markdown_extensions:
     custom_checkbox: true
 - pymdownx.tabbed:
     alternate_style: true
+- pymdownx.highlight:
+    anchor_linenums: true
+    use_pygments: true
+- pymdownx.tasklist:
+    custom_checkbox: true
+- pymdownx.superfences:
+    custom_fences:
+    - name: mermaid
+      class: mermaid
+      format: !!python/name:pymdownx.superfences.fence_code_format
+
+
+
+extra:
+  generator: false
+  quicklinks:
+  - name: Model
+    info: Open interactive model.
+    icon: lucide/orbit
+    link: https://sunkcosts.streamlit.app
+  - name: Repository
+    info: View source code.
+    icon: lucide/fingerprint
+    link: https://github.com/sunkcosts/sunkcosts.github.io
+  - name: Improvement
+    info: Suggest an improvement.
+    icon: lucide/lightbulb
+    link: https://github.com/sunkcosts/sunkcosts.github.io/discussions
+
+extra_css:
+- static/styles/theme.css
+- static/styles/admonition.css
+
+extra_javascript:
+# - static/script/tabs.js
+# - static/script/search.js
+- static/script/mathjax.js
+- https://polyfill.io/v3/polyfill.min.js?features=es6
+- https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
 
 nav:
-- About: "index.md"
-- Report: "report.md"
-- Model: "model/note.md"
-- Conference: "conference.md"
-- Resources: "resources.md"
-- References: references.md"
-- Contact: "contact.md"
+- Analysis:
+  - analysis/index.md
+  - References: analysis/references.md
+- Approach:
+  - approach/index.md
+- Docs:
+  - docs/index.md
+# - Notebook:
+#   - notebook/index.md
+# - Notes:
+#   - ""
+# - Jupyter:
+#   - ""
+# - Test: notebook/index.md
+# - Test: notebook/index.md
+# - Test: notebook/index.md
+# - Test: notebook/index.md
+# - Test: notebook/index.md
+# - Test: notebook/index.md
+# - Test: notebook/index.md
+# - Model: "https://www.google.com"
+# - Report: "report.md"
+# - Model: "model/note.md"
+# - Conference: "conference.md"
+# - Resources: "resources.md"
+# - References: references.md"
+# - Contact: "contact.md"
