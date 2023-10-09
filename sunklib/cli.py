@@ -13,6 +13,7 @@ def scli(ctx):
 
 @scli.group()
 def auth():
+    "Configure API tokens."
     pass
 
 
