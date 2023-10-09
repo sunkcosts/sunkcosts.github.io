@@ -1,11 +1,13 @@
 import click
+from sunklib.util.auth import credentials
+from sunklib.util.term import vprint
 from sunklib.env import VERSION
 
 
 @click.group()
 @click.version_option(VERSION)
 @click.pass_context
-def SCLI(ctx):
+def scli(ctx):
     pass
 
 
@@ -15,41 +17,36 @@ def auth():
 
 
 @auth.command()
-@click.option("--name")
-def view():
-    "view api keys"
-    pass
+def configured():
+    "view configured api keys"
+    vprint(credentials.tokens)
 
 
 @auth.command()
-@click.option("--name")
-@click.option("--key")
-def save():
-    "save api keys"
-    pass
+@click.option("--name", type=str, help="Name of API token.")
+def view(name: str) -> None:
+    "View an API token."
+    vprint(credentials.get(name))
+
+
+@auth.command()
+@click.option("--name", type=str, help="Name of API token.")
+@click.option("--token", type=str, help="API token.")
+def save(name: str, token: str) -> None:
+    "Save an API token."
+    credentials.save(name, token)
+
+
+@auth.command()
+@click.option("--name", type=str, help="Name of API token.")
+def delete(name: str) -> None:
+    "Delete an API token from package cache."
+    credentials.delete(name)
 
 
 @auth.command()
 @click.option("--name")
 def copy():
     "copy key to clipboard"
-    pass
-
-
-@auth.command()
-@click.option("--name")
-def delete():
-    "delete an api key from memory"
-    pass
-
-
-@auth.command()
-@click.option("--name")
-@click.option("--key")
-def add():
-    pass
-
-
-# set data directory
-
-# set API keys
+    # TODO
+    raise NotImplementedError()

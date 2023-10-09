@@ -44,6 +44,6 @@ name = "PyPI"
 priority = "primary"
 
 [tool.poetry.scripts]
-scli = "sunklib.cli:CLI"
+scli = "sunklib.cli:scli"
 
 
