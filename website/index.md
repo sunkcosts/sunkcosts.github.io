@@ -11,14 +11,14 @@ hide:
     padding: none !important;
     top: 4em;
 }
-.md-search,
+.md-search, .md-sidebar__scrollwrap,
 .md-tabs, .md-quick, .md-logo {
     display: none !important;
 }
 
 
 html {
-    background-image: url("./file/image.background.sunkcosts.jpg");
+    background-image: url("./file/internal/image.background.sunkcosts.jpg");
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -27,60 +27,41 @@ html {
 
 </style>
 
+!!! warning "This site is currently under development, please check back later."
+
 # **Sunk Costs**
+
+<p></p>
 
 ## Forecasting the Economic Impact of Sea Level Rise on Miami
 
-<div class="grid-container" style="display: grid; grid-template-columns: 1.13fr 1fr; margin-bottom: 0em; column-gap: 4em;" markdown>
+<br>
 
-<div class="grid-item" markdown>
-
----
-
-```bibtex title="BibTeX Citation"
-@misc{SCTM2023,
-    title = {Sunk Costs},
-    subtitle = {Forecasting the Economic Impact of Sea Level Rise on Miami},
-    author = {Hart Traveller and Luke Moloney},
-    year = {2023},
-    howpublished = {Available at https://sunkcosts.github.io}
-}
-```
-
-```shell title="Install & Run Model"
-pip install sunklib
-scli run gui --open
-```
-
-</div>
-
-<div class="grid-item" style="margin-left: -2em; padding-left: 1em; border-left: 1px solid #22344F;" markdown>
-
-## [❯ Read the analytical report](./analysis/index.md)
+## [❯ Read the analytical report](./analysis/introduction.md)
 
 <p></p>
 
 ## [❯ Open the interactive model](https://sunkcosts.streamlit.app)
 
-<br>
+<p></p>
 
-## [❯ Review the methodology]()
+## [❯ Review the methodology](./approach/index.md)
 
 <p></p>
 
-## [❯ Suggest an improvement]()
-
-<br>
-
-
-## [❯ Read the documentation]()
+## [❯ Suggest an improvement](https://www.github.com/sunkcosts/sunkcosts.github.io/discussions)
 
 <p></p>
 
-## [❯ View the source code]()
+## [❯ Read the documentation](./docs/index.md)
+
+<p></p>
+
+## [❯ View the source code](https://www.github.com/sunkcosts/sunkcosts.github.io)
 
 
-</div>
+
+
 
 
 

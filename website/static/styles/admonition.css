@@ -1,7 +1,33 @@
+/* admonition styles */
+
+.admonition p {
+    margin-top: 0.2em;
+    margin-bottom: 0em;
+}
+
+details p {
+    margin-top: 0.2em;
+    margin-bottom: 0em;
+}
+
+
+
+details {
+    transition: 0.5s ease !important;
+}
+
+details[open] summary {
+    background-color: transparent !important;
+}
+
+
+/* custom admonitions */
+
 :root {
     --icon-lucide-tangent: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-split"><path d="M16 3h5v5"/><path d="M8 3H3v5"/><path d="M12 22v-8.3a4 4 0 0 0-1.172-2.872L3 3"/><path d="m15 9 6-6"/></svg>');
     --icon-lucide-user: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user-circle-2"><path d="M18 20a6 6 0 0 0-12 0"/><circle cx="12" cy="10" r="4"/><circle cx="12" cy="12" r="10"/></svg>');
 }
+
 
 /* tangent admonition */
 

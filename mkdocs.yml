@@ -5,8 +5,8 @@ site_url: https://sunkcosts.github.io
 
 theme:
   name: material
-  favicon: "file/image.logo.sunkcosts.icon.png"
-  logo: "file/anim.logo.fast.loop.gif"
+  favicon: "file/internal/image.logo.sunkcosts.icon.png"
+  logo: "file/internal/anim.logo.fast.gif"
   logo_url: "/"
   logo_tooltip: ""
   custom_dir: website/static/custom
@@ -29,6 +29,7 @@ theme:
   - navigation.top
   - navigation.expand
   - navigation.instant
+  - navigation.footer
 
 plugins:
 - search
@@ -99,6 +100,8 @@ extra_javascript:
 nav:
 - Analysis:
   - analysis/index.md
+  - Introduction: analysis/introduction.md
+  - Sea Level Rise: analysis/sea_level_rise.md
   - References: analysis/references.md
 - Approach:
   - approach/index.md
