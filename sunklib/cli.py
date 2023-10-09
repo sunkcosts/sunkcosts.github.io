@@ -11,7 +11,7 @@ def scli(ctx):
     pass
 
 
-@click.group()
+@scli.group()
 def auth():
     pass
 
