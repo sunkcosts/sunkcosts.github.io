@@ -4,6 +4,7 @@
 
 # TODO: move to cache folder
 
+data/
 credentials.toml
 
 # Byte-compiled / optimized / DLL files

@@ -22,5 +22,48 @@ Notably a secondary claim we will also evaluate relates to the "growing concern 
 
 Accordingly, our objectives are as follows:
 
-1. Assess the validity of the claims stated above, stratifying them across future scenarios of varying severity.
-2. Build an adjustable model capable of forecasting the economic impact (or lack thereof) of climate change on the city of Miami. The user should be able to adjust the parameters given to the model so as to facilitate exploration of a wide range of possible scenarios.
+- Assess whether sea level is rising.
+    - *todo note: and also specific to miami, differs cause geo*
+- section finish: gen model that given inputs of:
+    - parameters to SLR curve from fit to prob distributions from IPCC dataset
+
+
+
+- is sea level rise bad? why?
+    - given premise that human death, displacement, and suffering is bad -> presumably yes
+        - reasonable premises to start with
+    - ^ this assumes that SLR would result in these events, would it?
+        - presumably, but show quantitatively, allow for model variability
+- if SLR results in bad outcomes, how much SLR expected, and how bad are the outcomes expected from given levels of SLR
+
+
+<!-- 1. Assess the claims stated above, by:
+2. Stratifying them across future scenarios of varying severity, specifically:
+
+3. Build an adjustable model capable of forecasting the economic impact (or lack thereof) of climate change on the city of Miami. The user should be able to adjust the parameters given to the model so as to facilitate exploration of a wide range of possible scenarios. -->
+
+
+##
+
+
+---
+
+## Structure/Format
+
+- SLR
+    - global
+    - miami specific
+
+- start with sea level rise
+    - is it happening?
+    - pull, analyze data.
+        - * conclusion -> already shown, occurring at accelerated rate, fetch data and statistically validate
+    - use available dataset to generate model, forecast given params
+        - factor in geographic bias associated with south eastern US coast
+
+- create a model component to forecast sea level rise
+    - global sea level rise
+    - local factors relevant to miami
+- assess: is the sea level rising?
+- assess: what are reasonable default parameters for this model component?
+- visualize: what do the various parameters for sea level rise look like
