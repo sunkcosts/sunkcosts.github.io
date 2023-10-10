@@ -5,6 +5,7 @@
 # TODO: move to cache folder
 
 data/
+integrate/
 credentials.toml
 
 # Byte-compiled / optimized / DLL files
