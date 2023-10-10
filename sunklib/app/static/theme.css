@@ -1,0 +1,128 @@
+/* section:not([data-testid="stSidebar"]) .block-container {
+    margin-top: -9em;
+} */
+
+/* Hide footer */
+footer {
+    display: none;
+}
+
+
+/* button[kind="primary"] {
+    height: 3.5em !important
+} */
+
+/* button[kind="secondary"] {
+    height: 3.5em !important
+} */
+
+iframe[title="st.iframe"][srcdoc*="folium"] {
+    border-radius: 8px;
+}
+
+
+/* div[data-modal-container='true'] > div:first-child > div:first-child {
+    position: absolute !important;
+    top: 4em !important;
+} */
+
+
+div[data-testid="collapsedControl"] {
+    top: 0.8em !important;
+}
+
+section[data-testid="stSidebar"] button[kind="header"] {
+    position: relative;
+    top: 0.2em;
+}
+
+section[data-testid="stSidebar"] div[data-testid="stMarkdownContainer"] {
+    position: relative;
+    margin-top: -6.2em;
+}
+
+section[data-testid="stSidebar"] div[data-testid="stMarkdownContainer"] p {
+    text-align: justify;
+    line-height: 1.4em;
+    font-size: 16px;
+}
+
+
+
+p {
+    transition: 0.3s ease !important;
+}
+
+button {
+    transition: ease 0.3s !important;
+}
+
+header[data-testid="stHeader"] {
+    display: none;
+    /* background: transparent !important; */
+}
+
+/* div[data-testid="stVerticalBlock"] {
+    border: 1px solid white;
+    border-radius: 8px;
+} */
+
+/* div[data-testid="stVerticalBlock"] .div {
+    padding: 10px !important;
+} */
+
+div[data-baseweb="select"] span[data-baseweb="tag"] span {
+    max-width: 512px !important;
+}
+
+h1 > div > a {
+    display: none !important;
+}
+h2 > div > a {
+    display: none !important;
+}
+h3 > div > a {
+    display: none !important;
+}
+h4 > div > a {
+    display: none !important;
+}
+h5 > div > a {
+    display: none !important;
+}
+h6 > div > a {
+    display: none !important;
+}
+
+h1 {
+    color: #ffffff !important;
+}
+
+h2 {
+    color: #73a1c7 !important;
+}
+
+h3 {
+    color: #5688b1 !important;
+}
+
+h4 {
+    color: #37668d !important;
+}
+
+h5 {
+    color: #195c92 !important;
+}
+
+h6 {
+    color: #005eab !important;
+}
+
+button[title="Copy to clipboard"] {
+    transform: matrix(1, 0, 0, 1, 0, 0) !important;
+}
+
+pre:hover {
+    filter: brightness(1.2) !important;
+    transition: 0.3s ease !important;
+}
