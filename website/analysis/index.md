@@ -21,7 +21,7 @@
     The focus of this report is the economic forecast, however the analysis was performed to contrast the cost of losing Miami to sea level rise with the cost of deploying a space based sunshade for geoengineering purposes. The project proposal was presented in 2022 at the New Worlds space conference in Austin. A modified [slide deck](../file/internal/document.slides.earthshade.pdf) for the proposal is included on this site.
 
 ??? tip "Site Navigation Tips"
-    You can press the `/` key to jump to quick search. Navigate between pages with the `<` and `>` keys or the forward and back buttons at the bottom of each page.
+    You can press the `/` key to jump to quick search. Navigate between pages with the `<` and `>` keys.
 
 ??? info "BibTeX Citation"
     ```bibtex
