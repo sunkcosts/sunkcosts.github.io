@@ -5,7 +5,7 @@ site_url: https://sunkcosts.github.io
 
 theme:
   name: material
-  favicon: "file/internal/image.logo.sunkcosts.icon.png"
+  favicon: "file/internal/image.logo.sunkcosts.png"
   logo: "file/internal/anim.logo.fast.gif"
   logo_url: "/"
   logo_tooltip: ""
@@ -29,15 +29,17 @@ theme:
   - navigation.top
   - navigation.expand
   - navigation.instant
-  - navigation.footer
 
 plugins:
 - search
+# - roamlinks
+- mkdocstrings
+- mkdocs-jupyter:
+    include_source: false
+    include_requirejs: true
 - glightbox:
     skip_classes:
     - skip-lightbox
-- roamlinks
-- mkdocstrings
 
 markdown_extensions:
 - attr_list
@@ -98,15 +100,18 @@ extra_javascript:
 
 
 nav:
-- Analysis:
-  - analysis/index.md
-  - Introduction: analysis/introduction.md
-  - Sea Level Rise: analysis/sea_level_rise.md
-  - References: analysis/references.md
-- Approach:
-  - approach/index.md
-- Docs:
-  - docs/index.md
+- Analysis: analysis.md
+- Documentation:
+  - documentation/index.md
+  - Setup: documentation/setup.md
+  - Usage: documentation/usage.md
+  - Structure: documentation/structure.md
+  - CLI: documentation/cli.md
+  - Notebook:
+    - Historical SLR: documentation/notebook/global_slr_trends.ipynb
+# - Approach:
+#   - approach/index.md
+#   - approach/global_slr_trends.ipynb
 # - Notebook:
 #   - notebook/index.md
 # - Notes:
@@ -127,3 +132,20 @@ nav:
 # - Resources: "resources.md"
 # - References: references.md"
 # - Contact: "contact.md"
+# - About: "index.md"
+# - Research:
+#   - Table of Contents: "research/00.table_of_contents.md"
+#   - Introduction: "research/01.introduction.md"
+#   - Qualitative Analysis: "research/02.analysis.md"
+#   - "Methodology: Project Cost": "research/03.methodology.01.project.md"
+#   - "Methodology: Opportunity Cost": "research/03.methodology.01.cost.md"
+#   - "Results: Project Cost": "research/04.results.01.project.md"
+#   - "Results: Opportunity Cost": "research/04.results.01.cost.md"
+#   - Discussion: "research/05.discussion.md"
+#   - References: "research/06.references.md"
+#   - Appendix: "research/07.appendix.md"
+# - Documentation:
+#   - Requirements: "documentation/00.requirements.md"
+#   - Installation: "documentation/01.installation.md"
+#   - Tutorial: "documentation/02.tutorial.md"
+#   - Features: "documentation/03.features.md"

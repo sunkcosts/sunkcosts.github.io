@@ -27,7 +27,7 @@ html {
 
 </style>
 
-!!! warning "This site is currently under development, please check back later."
+<!-- !!! warning "This site is currently under development, please check back later." -->
 
 # **Sunk Costs**
 
@@ -37,7 +37,7 @@ html {
 
 <br>
 
-## [❯ Read the analytical report](./analysis/introduction.md)
+## [❯ Read the analytical report](./analysis.md)
 
 <p></p>
 
@@ -45,7 +45,7 @@ html {
 
 <p></p>
 
-## [❯ Review the methodology](./approach/index.md)
+## [❯ Review the methodology](sort/index.md)
 
 <p></p>
 

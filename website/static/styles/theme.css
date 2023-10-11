@@ -22,6 +22,14 @@ html {
     background: var(--background);
 }
 
+/* plot embeds */
+
+body {
+    margin: 0 !important;
+}
+
+/* background */
+
 body,
 header,
 .md-tabs,
@@ -31,12 +39,46 @@ header,
     background: transparent !important;
 }
 
-.md-footer .md-footer__inner.md-grid {
+/* .md-footer .md-footer__inner.md-grid {
     width: 90em;
-}
+} */
 
 .admonition-title {
     background-color: transparent !important;
+}
+
+
+/* glitchy jupyter source */
+
+/* TODO: fix */
+a[title="Download Notebook"] {
+    display: none;
+}
+
+/* notebook formatting */
+
+.jp-CodeMirrorEditor.jp-Editor.jp-InputArea-editor {
+    border: none;
+    border-radius: 0.3em;
+}
+
+.jp-InputPrompt.jp-InputArea-prompt,
+.jp-OutputPrompt.jp-OutputArea-prompt {
+    display: none !important;
+}
+
+
+
+.jupyter-wrapper .jp-Notebook {
+    padding: 0 !important;
+    margin-top: -1em;
+    margin-left: -0.5em;
+    margin-right: -0.5em;
+}
+
+
+.jupyter-wrapper table.dataframe {
+    margin-left: 0 !important;
 }
 
 /* code */
@@ -296,7 +338,7 @@ a {
         z-index: 10;
         top: 0.1em;
         margin-right: 0em;
-        margin-left: -5em;
+        margin-left: -5.3em;
         transition: 0.5s ease !important;
         border-radius: 2em;
         padding: 0em;
@@ -337,9 +379,9 @@ a {
     }
 
     .md-tabs__link {
-        padding: 0.45em 0.7em;
+        padding: 0.45em 1em;
         margin-left: 0em;
-        margin-right: -1em;
+        margin-right: -0.2em;
         transition: 1s;
         color: white !important;
         opacity: 1 !important;
