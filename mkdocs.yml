@@ -28,7 +28,6 @@ theme:
   - navigation.indexes
   - navigation.top
   - navigation.expand
-  - navigation.instant
 
 plugins:
 - search
@@ -88,12 +87,17 @@ extra:
     link: https://github.com/sunkcosts/sunkcosts.github.io/discussions
 
 extra_css:
-- static/styles/theme.css
-- static/styles/admonition.css
+- static/styles/global.admonition.css
+- static/styles/global.notebook.css
+- static/styles/global.theme.css
+- static/styles/max.theme.css
+- static/styles/med.theme.css
+- static/styles/min.theme.css
+# - static/styles/theme.old.css
 
 extra_javascript:
 # - static/script/tabs.js
-# - static/script/search.js
+- static/script/search.js
 - static/script/mathjax.js
 - https://polyfill.io/v3/polyfill.min.js?features=es6
 - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js

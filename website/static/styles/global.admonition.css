@@ -10,8 +10,6 @@ details p {
     margin-bottom: 0em;
 }
 
-
-
 details {
     transition: 0.5s ease !important;
 }
@@ -19,6 +17,15 @@ details {
 details[open] summary {
     background-color: transparent !important;
 }
+
+.admonition-title {
+    background-color: transparent !important;
+}
+
+/* .md-typeset .admonition.tip,
+.md-typeset details.tip {
+    background: transparent;
+} */
 
 
 /* custom admonitions */

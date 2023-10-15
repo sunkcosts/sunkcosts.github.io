@@ -1,25 +1,34 @@
+function hasFocusVisible() {
+    // if nothing related to the search is selected, close it
+    // this addresses issue wherein if you search for a heading on the page, and go to it
+    // the search does not actually close because the page does not reload
+    return document.querySelector('.focus-visible') !== null;
+}
+
 function openSearch() {
+    console.log("open search")
     search_input.focus()
     search_input.select()
     header.style["z-index"] = "10000";
     search.style["opacity"] = "1";
     quick_search_open = true;
-    console.log("open search")
 }
 
 function closeSearch() {
+    console.log("close search")
     header.style["z-index"] = "0";
     search.style["opacity"] = "0";
     search_input.blur()
     quick_search_open = false;
-    console.log("close search")
 
 }
 
 function checkShortcuts(event) {
     if (((event.metaKey || event.ctrlKey) && event.key === 'k') && (!quick_search_open)) {
+        // quick_search_open = true;
         openSearch()
     } else if ((((event.metaKey || event.ctrlKey) && event.key === 'k') || (event.keyCode == 27)) && (quick_search_open)) {
+        // quick_search_open = false;
         closeSearch();
     }
 }
@@ -36,3 +45,19 @@ document.onkeydown = checkShortcuts
 search_overlay.onclick = function () {
     closeSearch()
 }
+
+
+// Set up a MutationObserver to watch for changes in the DOM
+const observer = new MutationObserver(() => {
+    if (!hasFocusVisible()) {
+        closeSearch();
+    }
+});
+
+// Start observing the entire document and its descendants for modifications
+observer.observe(document, {
+    attributes: true,
+    childList: true,
+    subtree: true,
+    attributeFilter: ['class'] // Only observe changes in class attribute
+});
