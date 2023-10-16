@@ -3,6 +3,65 @@ site_name: Sunk Costs
 docs_dir: website
 site_url: https://sunkcosts.github.io
 
+nav:
+- Analysis:
+  - analysis/index.md
+  - analysis/references.md
+  - Details:
+    - analysis/details/forecast_caveats.md
+    - analysis/details/economic_value_subjectivity.md
+  - Notebooks:
+    - analysis/notebooks/lsa_recent_gmsl.ipynb
+- Documentation:
+  - documentation/index.md
+  - Setup: documentation/setup.md
+  - Usage: documentation/usage.md
+  - Structure: documentation/structure.md
+  - CLI: documentation/cli.md
+    # - Notebook:
+    #   - Historical SLR: documentation/notebook/global_slr_trends.ipynb
+# - Approach:
+#   - approach/index.md
+#   - approach/global_slr_trends.ipynb
+# - Notebook:
+#   - notebook/index.md
+# - Notes:
+#   - ""
+# - Jupyter:
+#   - ""
+# - Test: notebook/index.md
+# - Test: notebook/index.md
+# - Test: notebook/index.md
+# - Test: notebook/index.md
+# - Test: notebook/index.md
+# - Test: notebook/index.md
+# - Test: notebook/index.md
+# - Model: "https://www.google.com"
+# - Report: "report.md"
+# - Model: "model/note.md"
+# - Conference: "conference.md"
+# - Resources: "resources.md"
+# - References: references.md"
+# - Contact: "contact.md"
+# - About: "index.md"
+# - Research:
+#   - Table of Contents: "research/00.table_of_contents.md"
+#   - Introduction: "research/01.introduction.md"
+#   - Qualitative Analysis: "research/02.analysis.md"
+#   - "Methodology: Project Cost": "research/03.methodology.01.project.md"
+#   - "Methodology: Opportunity Cost": "research/03.methodology.01.cost.md"
+#   - "Results: Project Cost": "research/04.results.01.project.md"
+#   - "Results: Opportunity Cost": "research/04.results.01.cost.md"
+#   - Discussion: "research/05.discussion.md"
+#   - References: "research/06.references.md"
+#   - Appendix: "research/07.appendix.md"
+# - Documentation:
+#   - Requirements: "documentation/00.requirements.md"
+#   - Installation: "documentation/01.installation.md"
+#   - Tutorial: "documentation/02.tutorial.md"
+#   - Features: "documentation/03.features.md"
+
+
 theme:
   name: material
   favicon: "file/internal/image.logo.sunkcosts.png"
@@ -26,19 +85,21 @@ theme:
   - navigation.tabs
   - navigation.tabs.sticky
   - navigation.indexes
-  - navigation.top
+  # - navigation.top
   - navigation.expand
 
 plugins:
 - search
-# - roamlinks
-- mkdocstrings
 - mkdocs-jupyter:
     include_source: false
     include_requirejs: true
 - glightbox:
     skip_classes:
     - skip-lightbox
+- roamlinks
+# - mkdocstrings
+# - bibtex:
+#     bib_file: website/references.bib
 
 markdown_extensions:
 - attr_list
@@ -62,6 +123,8 @@ markdown_extensions:
     use_pygments: true
 - pymdownx.tasklist:
     custom_checkbox: true
+- pymdownx.arithmatex:
+    generic: true
 - pymdownx.superfences:
     custom_fences:
     - name: mermaid
@@ -103,53 +166,3 @@ extra_javascript:
 - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
 
-nav:
-- Analysis: analysis.md
-- Documentation:
-  - documentation/index.md
-  - Setup: documentation/setup.md
-  - Usage: documentation/usage.md
-  - Structure: documentation/structure.md
-  - CLI: documentation/cli.md
-  - Notebook:
-    - Historical SLR: documentation/notebook/global_slr_trends.ipynb
-# - Approach:
-#   - approach/index.md
-#   - approach/global_slr_trends.ipynb
-# - Notebook:
-#   - notebook/index.md
-# - Notes:
-#   - ""
-# - Jupyter:
-#   - ""
-# - Test: notebook/index.md
-# - Test: notebook/index.md
-# - Test: notebook/index.md
-# - Test: notebook/index.md
-# - Test: notebook/index.md
-# - Test: notebook/index.md
-# - Test: notebook/index.md
-# - Model: "https://www.google.com"
-# - Report: "report.md"
-# - Model: "model/note.md"
-# - Conference: "conference.md"
-# - Resources: "resources.md"
-# - References: references.md"
-# - Contact: "contact.md"
-# - About: "index.md"
-# - Research:
-#   - Table of Contents: "research/00.table_of_contents.md"
-#   - Introduction: "research/01.introduction.md"
-#   - Qualitative Analysis: "research/02.analysis.md"
-#   - "Methodology: Project Cost": "research/03.methodology.01.project.md"
-#   - "Methodology: Opportunity Cost": "research/03.methodology.01.cost.md"
-#   - "Results: Project Cost": "research/04.results.01.project.md"
-#   - "Results: Opportunity Cost": "research/04.results.01.cost.md"
-#   - Discussion: "research/05.discussion.md"
-#   - References: "research/06.references.md"
-#   - Appendix: "research/07.appendix.md"
-# - Documentation:
-#   - Requirements: "documentation/00.requirements.md"
-#   - Installation: "documentation/01.installation.md"
-#   - Tutorial: "documentation/02.tutorial.md"
-#   - Features: "documentation/03.features.md"

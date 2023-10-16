@@ -24,7 +24,7 @@ mkdocs-click = "^0.8.1"
 mkdocs-glightbox = "^0.3.4"
 mkdocs-roamlinks-plugin = "^0.3.2"
 mkdocs-jupyter = "^0.24.5"
-kaleido = "^0.2.1.post1"
+kaleido = "==0.2.1"
 
 [tool.poetry.group.dev]
 optional = true

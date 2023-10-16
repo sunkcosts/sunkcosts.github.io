@@ -8,6 +8,7 @@
 
 data/
 integrate/
+local/
 credentials.toml
 
 # Byte-compiled / optimized / DLL files

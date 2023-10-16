@@ -8,9 +8,35 @@
     - [OSTM/Jason-2](https://www.wikiwand.com/en/OSTM/Jason-2)
     - [Jason-3](https://www.wikiwand.com/en/Jason-3)
 
+We start by analyzing sea level rise (SLR) trends.
 
+
+<!-- 1. An analysis of global sea level trends.
+    - SLR trends in historical context.
+2. Exploration into regional differences from global trends.
+3. The addition of a regional modifier to our model.
+4. The integration of probability distributions into our model.
+5. The integration of the aforementioned regional modifier to the probabilistic model. -->
 
 ### Recent History
+
+<!-- This page is structured as follows:
+
+
+X. Collection of satellite data
+X. Visualization of SIP
+
+- First start with global SLR
+    - data source: https://www.star.nesdis.noaa.gov/socd/lsa/SeaLevelRise/LSA_SLR_timeseries_global.php
+        - from sat:  TOPEX/Poseidon, Jason-1, Jason-2, and Jason-3
+- Then look at regional SLR, introduce reasonable modification parameter, ref regional paper
+- Then pull probability dataset, build probabilistic model
+- Then add modifier parameter for regional variation to probabilistic model
+-->
+
+
+
+<!-- ### NOAA Global SLR Trend: year - year -->
 
 
 
@@ -58,23 +84,10 @@ The structure of this analysis will be one in which we build out a model to fore
 
 
 
-<!-- According to ChatGPT, the following statement is a good opener for this report:
-
-> Miami is situated in Miami-Dade County, on the southeastern coast of Florida. As the effects of climate change continue to manifest, there is growing concern about the potential impact on the city. One of the most pressing issues is the rise in sea level, which threatens to inundate Miami's low-lying areas and cause extensive damage to its infrastructure and property. In addition, the city is likely to experience more frequent and severe extreme weather events, such as hurricanes and flooding, which could further exacerbate the risks posed by rising sea levels.
-
-Let's pause for a moment, as a number of claims were just made or implied which you might be expected to take at face value as the reader.
 
 ## Claims
 
-The primary claims are as follows:
 
-1. The sea level is rising.
-2. The frequency and intensity of extreme weather events is increasing.
-3. These changes may harm life, infrastructure, and property, in the city of Miami.
-
-While they may seem reasonable to many, it is worth verifying whether or not they are actually true. Plus, verifying the accuracy of the assertions is a good entry point into the analytical process used to create this report, and allows us to build out the foundations of the model.
-
-Notably a secondary claim we will also evaluate relates to the "growing concern about the potential impact on the city". Is concern actually growing? We will utilize various computational social science research tools in an attempt to find the answer.
 
 ## Objectives
 
@@ -241,7 +254,7 @@ The benefit of representing the distribution as a PDF is that we can easily inte
 
 We set the "SIP starting point" at an SLR of 900 millimeters - under the 1 meter at which we will see a disproportionate increase in coastal inundation, but possibly around the time that major areas of the city and surrounding areas would have to be evacuated (assuming preventative measures are not taken).
 
-To estimate the probability that the SIP will *begin* by a given year, we integrate the area greater than 900mm under the curve, for the PDF for a given year. TLDR, we get the following chart, which illustrates the probability the SIP will begin in any given year. Please keep in mind the points made on the [Miami Adjusted SLR](miami-adj-slr.md) page.
+To estimate the probability that the SIP will *begin* by a given year, we integrate the area greater than 900mm under the curve, for the PDF for a given year. TLDR, we get the following chart, which illustrates the probability the SIP will begin in any given year. Please keep in mind the points made on the [Miami Adjusted SLR]miami-adj-slr.md page.
 
 ## Figure 9: SIP Temporal Probabilities By Year (10 Year Intervals)
 

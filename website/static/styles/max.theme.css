@@ -178,7 +178,7 @@
     } */
 
     .md-sidebar.md-sidebar--secondary {
-        top: 8em !important;
+        top: 9.5em !important;
         padding-top: 0.1em !important;
         margin-top: -8em !important;
     }
@@ -204,7 +204,7 @@
         padding: 0.4em 1em 1em 1em;
         border-radius: 8px;
         left: 1em;
-        /* width: 23.4em; */
+        width: 25em;
     }
 
     .md-sidebar.md-sidebar--secondary {

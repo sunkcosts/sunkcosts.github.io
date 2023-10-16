@@ -43,33 +43,6 @@ html {
 
 
 
-/* justify text */
-
-/* p */
-
-.md-content p {
-    text-align: justify;
-    line-height: 1.4em;
-    /* font-size: 0.9em; */
-}
-
-/* lists */
-
-.md-content ul,
-.md-content ol {
-    text-align: justify;
-    padding: 0em 0em;
-    /* font-size: 0.95em !important; */
-}
-
-.md-content li {
-    text-align: justify;
-    padding: 0em 0em;
-    margin: -0.4em 0em;
-    line-height: 1.4em;
-    /* font-size: 0.95em !important; */
-}
-
 
 
 .md-main .md-content {

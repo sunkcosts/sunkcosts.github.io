@@ -1,0 +1,5 @@
+# Seasonal Signals
+
+- The difference between datasets with "seasonal signals retained" and "seasonal signals removed" pertains to the treatment of seasonal variations in the data. In the context of sea level data, seasonal signals could include variations caused by thermal expansion, melting glaciers, and other factors that follow a seasonal pattern.
+- Seasonal Signals Retained: This dataset includes the seasonal variations. It reflects the actual measurements taken over time, inclusive of all the fluctuations that occur on a seasonal basis. It can be useful for understanding how different factors contribute to sea level changes over the course of a year.
+- Seasonal Signals Removed: This dataset has been adjusted to remove the seasonal variations, providing a smoother trend over time. By removing the seasonal signals, it's easier to observe long-term trends and compare data across different time periods without the noise of seasonal fluctuations.
