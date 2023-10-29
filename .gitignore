@@ -3,6 +3,7 @@
 .DS_Store
 .obsidian
 .trash
+tokens/
 
 # TODO: move to cache folder
 
