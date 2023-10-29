@@ -1,6 +1,6 @@
 import click
 import subprocess
-from sunklib.util.auth import credentials
+from sunklib.tokens import creds
 from sunklib.util.term import vprint
 from sunklib.env import VERSION, APP_ENTRY_POINT
 
@@ -16,41 +16,64 @@ def scli(ctx):
 
 
 @scli.group()
-def auth():
+def tokens():
     "Configure API tokens."
     pass
 
 
-@auth.command()
+@tokens.command()
 def configured():
     "view configured api keys"
-    vprint(credentials.tokens)
+    vprint(creds.tokens)
 
 
-@auth.command()
-@click.option("--name", type=str, help="Name of API token.")
+@tokens.command()
+@click.option(
+    "--name",
+    type=str,
+    help="Name of API token.",
+    required=True,
+)
 def view(name: str) -> None:
     "View an API token."
-    vprint(credentials.get(name))
+    vprint(creds.get(name))
 
 
-@auth.command()
-@click.option("--name", type=str, help="Name of API token.")
-@click.option("--token", type=str, help="API token.")
+@tokens.command()
+@click.option(
+    "--name",
+    type=str,
+    help="Name of API token.",
+    required=True,
+)
+@click.option(
+    "--token",
+    type=str,
+    help="API token.",
+    required=True,
+)
 def save(name: str, token: str) -> None:
     "Save an API token."
-    credentials.save(name, token)
+    creds.save(name, token)
 
 
-@auth.command()
-@click.option("--name", type=str, help="Name of API token.")
+@tokens.command()
+@click.option(
+    "--name",
+    type=str,
+    help="Name of API token.",
+    required=True,
+)
 def delete(name: str) -> None:
     "Delete an API token from package cache."
-    credentials.delete(name)
+    creds.delete(name)
 
 
-@auth.command()
-@click.option("--name")
+@tokens.command()
+@click.option(
+    "--name",
+    required=True,
+)
 def copy():
     "copy key to clipboard"
     # TODO
