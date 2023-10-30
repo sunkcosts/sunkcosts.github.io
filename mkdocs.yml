@@ -1,74 +1,18 @@
 
 site_name: Sunk Costs
-docs_dir: website
+docs_dir: report
 site_url: https://sunkcosts.github.io
 
 nav:
-- Analysis:
-  - analysis/index.md
-  - analysis/references.md
-  - Details:
-    - analysis/details/forecast_caveats.md
-    - analysis/details/economic_value_subjectivity.md
-  - Notebooks:
-    - analysis/notebooks/lsa_recent_gmsl.ipynb
-- Documentation:
-  - documentation/index.md
-  - Setup: documentation/setup.md
-  - Usage: documentation/usage.md
-  - Structure: documentation/structure.md
-  - CLI: documentation/cli.md
-    # - Notebook:
-    #   - Historical SLR: documentation/notebook/global_slr_trends.ipynb
-# - Approach:
-#   - approach/index.md
-#   - approach/global_slr_trends.ipynb
-# - Notebook:
-#   - notebook/index.md
-# - Notes:
-#   - ""
-# - Jupyter:
-#   - ""
-# - Test: notebook/index.md
-# - Test: notebook/index.md
-# - Test: notebook/index.md
-# - Test: notebook/index.md
-# - Test: notebook/index.md
-# - Test: notebook/index.md
-# - Test: notebook/index.md
-# - Model: "https://www.google.com"
-# - Report: "report.md"
-# - Model: "model/note.md"
-# - Conference: "conference.md"
-# - Resources: "resources.md"
-# - References: references.md"
-# - Contact: "contact.md"
-# - About: "index.md"
-# - Research:
-#   - Table of Contents: "research/00.table_of_contents.md"
-#   - Introduction: "research/01.introduction.md"
-#   - Qualitative Analysis: "research/02.analysis.md"
-#   - "Methodology: Project Cost": "research/03.methodology.01.project.md"
-#   - "Methodology: Opportunity Cost": "research/03.methodology.01.cost.md"
-#   - "Results: Project Cost": "research/04.results.01.project.md"
-#   - "Results: Opportunity Cost": "research/04.results.01.cost.md"
-#   - Discussion: "research/05.discussion.md"
-#   - References: "research/06.references.md"
-#   - Appendix: "research/07.appendix.md"
-# - Documentation:
-#   - Requirements: "documentation/00.requirements.md"
-#   - Installation: "documentation/01.installation.md"
-#   - Tutorial: "documentation/02.tutorial.md"
-#   - Features: "documentation/03.features.md"
-
+- index.md
 
 theme:
   name: material
-  favicon: "file/internal/image.logo.sunkcosts.png"
-  logo: "file/internal/anim.logo.fast.gif"
+  favicon: "file/site/image.logo.sunkcosts.png"
+  logo: "file/site/anim.logo.fast.gif"
   logo_url: "/"
   logo_tooltip: ""
-  custom_dir: website/static/custom
+  custom_dir: report/static/custom
   icon:
     annotation: material/plus-circle
   font:
@@ -82,35 +26,32 @@ theme:
   - content.code.copy
   - content.code.annotate
   - navigation.tracking
-  - navigation.tabs
-  - navigation.tabs.sticky
-  - navigation.indexes
-  # - navigation.top
-  - navigation.expand
 
 plugins:
 - search
-- mkdocs-jupyter:
-    include_source: false
-    include_requirejs: true
+- roamlinks
 - glightbox:
+    effect: fade
     skip_classes:
     - skip-lightbox
-- roamlinks
-# - mkdocstrings
-# - bibtex:
-#     bib_file: website/references.bib
+- mkdocs-jupyter:
+    theme: dark
+    include_source: false
+    include_requirejs: true
+    show_input: false
+    no_input: True
+    remove_tag_config:
+      remove_input_tags:
+      - hide
 
 markdown_extensions:
 - attr_list
 - md_in_html
 - admonition
 - footnotes
-- mkdocs-click
 - pymdownx.details
 - pymdownx.inlinehilite
 - pymdownx.snippets
-- pymdownx.superfences
 - pymdownx.highlight:
     anchor_linenums: true
     use_pygments: true
@@ -136,18 +77,19 @@ markdown_extensions:
 extra:
   generator: false
   quicklinks:
-  - name: Model
-    info: Open interactive model.
-    icon: lucide/orbit
-    link: https://sunkcosts.streamlit.app
-  - name: Repository
-    info: View source code.
+  - name: GitHub Organization
+    info: Source Code & Resources
     icon: lucide/fingerprint
-    link: https://github.com/sunkcosts/sunkcosts.github.io
-  - name: Improvement
-    info: Suggest an improvement.
-    icon: lucide/lightbulb
-    link: https://github.com/sunkcosts/sunkcosts.github.io/discussions
+    link: https://github.com/sunkcosts
+    # - name: Streamlit App
+    #   info: Interactive Model
+    #   icon: lucide/orbit
+    #   link: https://sunkcosts.streamlit.app
+    # - name: Author Website
+    #   info: Author Information
+    #   icon: lucide/at
+    #   link: https://harttraveller.com
+
 
 extra_css:
 - static/styles/global.admonition.css
@@ -156,10 +98,14 @@ extra_css:
 - static/styles/max.theme.css
 - static/styles/med.theme.css
 - static/styles/min.theme.css
+- static/styles/testing.css
 # - static/styles/theme.old.css
 
 extra_javascript:
 # - static/script/tabs.js
+- static/script/quicklink.js
+# - static/script/video.js
+# - static/script/video-test.js
 - static/script/search.js
 - static/script/mathjax.js
 - https://polyfill.io/v3/polyfill.min.js?features=es6
