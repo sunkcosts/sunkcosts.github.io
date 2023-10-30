@@ -95,6 +95,7 @@ Also before we begin, let's establish the geographic bounds of the region we wil
 <iframe frameBorder="0" style="width: 100%; max-height: 30em; height: 30em;" src="./file/main/plotly.map.aoa_bounds_mapbox.html"></iframe>
 </div>
 
+!!! note "All data visualizations on this site are interactive. Double click a plot to reset to the original zoom."
 <!--
 <div class="image">
     <img src="./file/report/image.satellite.miami_sample_area_small.png" style="width: 30em;">
@@ -109,30 +110,40 @@ We'll assume that the loss of property due to SLR has a negative economic impact
 
 ### Historical Sea Level
 
-To provide context, let's take a short detour into historical sea level trends on planet Earth. We'll start by looking at the global sea level trend over the last few decades using data from the [Jason](https://www.star.nesdis.noaa.gov/socd/lsa/SeaLevelRise/LSA_SLR_timeseries_global.php) Satellite Missions. (1) The data used for this visualization can be downloaded [here](https://www.star.nesdis.noaa.gov/socd/lsa/SeaLevelRise/slr/slr_sla_gbl_free_txj1j2_90.csv) - we're using the set with seasonal signals removed. (2)
+To provide context, let's take a short detour into historical sea level trends on planet Earth. We'll start by looking at the global sea level trend over the last few decades using data from the [Jason](https://www.star.nesdis.noaa.gov/socd/lsa/SeaLevelRise/LSA_SLR_timeseries_global.php) Satellite Missions. The data used for this visualization can be downloaded [here](https://www.star.nesdis.noaa.gov/socd/lsa/SeaLevelRise/slr/slr_sla_gbl_free_txj1j2_90.csv) - we're using the set with seasonal signals removed. (1)
 { .annotate }
 
-1.  All data visualizations on this site are interactive. Double click a plot to reset to the original zoom.
 
-2.  This is the data with seasonal signals removed. The difference between datasets with "seasonal signals retained" and "seasonal signals removed" pertains to the treatment of seasonal variations in the data. In the context of sea level data, seasonal signals could include variations caused by thermal expansion, melting glaciers, and other factors that follow a seasonal pattern.
+1.  This is the data with seasonal signals removed. The difference between datasets with "seasonal signals retained" and "seasonal signals removed" pertains to the treatment of seasonal variations in the data. In the context of sea level data, seasonal signals could include variations caused by thermal expansion, melting glaciers, and other factors that follow a seasonal pattern.
 
     - Seasonal Signals Retained: This dataset includes the seasonal variations. It reflects the actual measurements taken over time, inclusive of all the fluctuations that occur on a seasonal basis. It can be useful for understanding how different factors contribute to sea level changes over the course of a year.
     - Seasonal Signals Removed: This dataset has been adjusted to remove the seasonal variations, providing a smoother trend over time. By removing the seasonal signals, it's easier to observe long-term trends and compare data across different time periods without the noise of seasonal fluctuations.
 
 <div class="frame">
-<iframe frameBorder="0" style="width: 100%; max-height: 30em; height: 30em;" src="./file/main/plotly.graph.lsa_gmsl_scatterplot.html"></iframe>
+<iframe frameBorder="0" style="width: 100%; height: 35em;" src="./file/main/plotly.graph.lsa_gmsl_scatterplot.html"></iframe>
 </div>
 
 
-It is of course technically possible that the sea level has been rising for some time. For the sake of curiousity let's zoom out and look at the last few millenia. We'll use data produced by Kopp et al. from [this research](https://doi.org/10.1073/pnas.1517056113) paper on historical global mean sea level. The dataset can be downloaded [here](https://www.pnas.org/doi/suppl/10.1073/pnas.1517056113/suppl_file/pnas.1517056113.sd03.xls).
+It is of course technically possible that the sea level has been rising for some time. For the sake of curiousity let's zoom out and look at the last few millenia. We'll use data produced by Kopp et al. from [this research](https://doi.org/10.1073/pnas.1517056113) paper on historical global mean sea level. (1) The dataset can be downloaded [here](https://www.pnas.org/doi/suppl/10.1073/pnas.1517056113/suppl_file/pnas.1517056113.sd03.xls). (2)
+{ .annotate }
 
+1.  The `1s` column representing confidence is dropped in this visualization to simplify the output. From the paper:
+
+    > Each database entry includes reconstructed RSL, RSL error, age, and age error. For regional reconstructions produced from multiple sites (e.g., ref. 5), we treated each site independently. Where we used publications that previously compiled RSL reconstructions (e.g., refs. 37 and 45), the results were used as presented in the compilation. RSL error was assumed to be a range unless the original publication explicitly stated otherwise or if the reconstruction was generated using a transfer function and a Random Mean SE Standard Error of Prediction was reported, in which case this was treated as a range.
+
+2.  Also, the industrial revolution start date reference taken from wikipedia page on the industrial revolution.
 
 <div class="frame">
-<iframe frameBorder="0" style="width: 100%; max-height: 30em; height: 30em;" src="./file/main/plotly.graph.lsa_kopp_scatterplot.html"></iframe>
+<iframe frameBorder="0" style="width: 100%; height: 35em;" src="./file/main/plotly.graph.lsa_kopp_scatterplot.html"></iframe>
 </div>
 
+So far we've only found that the sea level _has been rising_ - but will it continue to rise?
 
 ### Future Sea Level
+
+Given the immense complexity and myriad factors influencing the sea level, creating a climatic model to forecast future sea level rise is beyond our capabilities.
+
+Thankfully, smarter folks than us have already done this, namely: the IPCC. Of course, predicting the future is difficult if not impossible, so the IPCC provides us with a number of different scenarios in the form of SSPs (previously known as RCPs) through which we can evaluate the possible futures we face. We'll be focusing on SSP 126, 245, and 585, which we'll refer to as the 'best', 'medium', and 'worst' case scenarios.
 
 
 ### Property Value

@@ -79,6 +79,7 @@ extra:
   quicklinks:
   - name: GitHub Organization
     info: Source Code & Resources
+    # info: ""
     icon: lucide/fingerprint
     link: https://github.com/sunkcosts
     # - name: Streamlit App

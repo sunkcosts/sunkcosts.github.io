@@ -3,6 +3,7 @@
     /* quick links */
 
     .md-quick {
+        z-index: 999;
         display: block;
         margin: 0;
         z-index: 16;
@@ -13,7 +14,7 @@
     }
 
     .md-quick__link {
-        z-index: 1001;
+        z-index: 999;
         color: rgb(45, 94, 183);
         display: inline;
         transition: 0.3s ease !important;
@@ -24,7 +25,7 @@
     }
 
     .md-quick__link svg {
-        z-index: 1001;
+        z-index: 999;
         max-height: 3em;
         vertical-align: 0em;
         margin-top: -1em;
@@ -32,6 +33,7 @@
 
     .md-sidebar__tooltip {
         font-size: 1.5em;
+        font-weight: bold;
         color: transparent;
         position: relative;
         display: block;
@@ -40,13 +42,13 @@
         margin: 0;
         transition: 0.3s ease !important;
         top: -2.05em;
-        left: 2.4em;
-        z-index: 1001;
+        left: 10vw;
+        z-index: 999;
     }
 
     .md-quick__link:hover+.md-sidebar__tooltip {
         color: var(--quicklink-hover-color);
-        font-weight: bold;
+        left: 2.4em;
         z-index: 1001;
     }
 
@@ -54,7 +56,7 @@
     /* header button */
 
     .md-header {
-        z-index: 1001 !important;
+        z-index: 999 !important;
     }
 
     .md-header__button.md-logo {
