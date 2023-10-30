@@ -1,6 +1,6 @@
 import pandas as pd
-import netCDF4 as nc
 import numpy as np
+from netCDF4._netCDF4 import Dataset
 
 
 def load_clean_lsa_slr_dataset(path):
@@ -28,7 +28,7 @@ def load_ssp_file(basepath: str, confidence: str, scenario: str):
     # ../data/ar6/global/confidence_output_files
     HARDCODED_SSP_DATAPATH = f"{basepath}/{confidence}_confidence/{scenario}/total_{scenario}_{confidence}_confidence_values.nc"
     # 'dataset is not known member' warning: it is
-    data = nc.Dataset(HARDCODED_SSP_DATAPATH)
+    data = Dataset(HARDCODED_SSP_DATAPATH)
     years = np.array(data["years"][:])
     slc = np.array(data["sea_level_change"][:])
     return years, slc, data
