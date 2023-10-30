@@ -105,6 +105,38 @@ Also before we begin, let's establish the geographic bounds of the region we wil
 
 ## Property
 
+We'll assume that the loss of property due to SLR has a negative economic impact. Before we go into the details of quantifying property value though, lets first focus on sea level rise.
+
+### Historical Sea Level
+
+To provide context, let's take a short detour into historical sea level trends on planet Earth. We'll start by looking at the global sea level trend over the last few decades using data from the [Jason](https://www.star.nesdis.noaa.gov/socd/lsa/SeaLevelRise/LSA_SLR_timeseries_global.php) Satellite Missions. (1) The data used for this visualization can be downloaded [here](https://www.star.nesdis.noaa.gov/socd/lsa/SeaLevelRise/slr/slr_sla_gbl_free_txj1j2_90.csv) - we're using the set with seasonal signals removed. (2)
+{ .annotate }
+
+1.  All data visualizations on this site are interactive. Double click a plot to reset to the original zoom.
+
+2.  This is the data with seasonal signals removed. The difference between datasets with "seasonal signals retained" and "seasonal signals removed" pertains to the treatment of seasonal variations in the data. In the context of sea level data, seasonal signals could include variations caused by thermal expansion, melting glaciers, and other factors that follow a seasonal pattern.
+
+    - Seasonal Signals Retained: This dataset includes the seasonal variations. It reflects the actual measurements taken over time, inclusive of all the fluctuations that occur on a seasonal basis. It can be useful for understanding how different factors contribute to sea level changes over the course of a year.
+    - Seasonal Signals Removed: This dataset has been adjusted to remove the seasonal variations, providing a smoother trend over time. By removing the seasonal signals, it's easier to observe long-term trends and compare data across different time periods without the noise of seasonal fluctuations.
+
+<div class="frame">
+<iframe frameBorder="0" style="width: 100%; max-height: 30em; height: 30em;" src="./file/main/plotly.graph.lsa_gmsl_scatterplot.html"></iframe>
+</div>
+
+
+It is of course technically possible that the sea level has been rising for some time. For the sake of curiousity let's zoom out and look at the last few millenia. We'll use data produced by Kopp et al. from [this research](https://doi.org/10.1073/pnas.1517056113) paper on historical global mean sea level. The dataset can be downloaded [here](https://www.pnas.org/doi/suppl/10.1073/pnas.1517056113/suppl_file/pnas.1517056113.sd03.xls).
+
+
+<div class="frame">
+<iframe frameBorder="0" style="width: 100%; max-height: 30em; height: 30em;" src="./file/main/plotly.graph.lsa_kopp_scatterplot.html"></iframe>
+</div>
+
+
+### Future Sea Level
+
+
+### Property Value
+
 Starting with property cost, we'll take the following premises as true. (1)
 { .annotate }
 
@@ -120,18 +152,7 @@ It seems reasonable to assume that when the property has *already* been lost to 
 
 As such, we should not assess the lost market value by looking at the market value, but rather by looking at what the market value would be in the absence of SLR, comparing it to the market value in the presence of SLR (and specifically, various potential SLR scenarios), and taking the difference between the two.
 
-Unfortunately, this is an unpredictable and dynamic system, so for now we'll put the question aside and focus on sea level trends.
-
-
-### Sea Level Trends
-
-
-### Sea Level Forecast
-
-
-
-
-
+Unfortunately, this is an unpredictable and dynamic system.
 
 
 
@@ -191,7 +212,7 @@ Before you begin, make sure you install the package utilities and configure any 
 
 
 <!--
-!!! tip "All data visualizations on this site are interactive. Double click a plot to reset to the original zoom."
+
 -->
 
 

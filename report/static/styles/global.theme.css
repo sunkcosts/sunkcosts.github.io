@@ -22,9 +22,14 @@ div[id="MathJax_Message"] {
     display: none !important;
 }
 
-.md-tooltip__inner.md-typeset {
+.md-tooltip__inner.md-typeset,
+.md-tooltip__inner.md-typeset p,
+.md-tooltip__inner.md-typeset li,
+.md-tooltip__inner.md-typeset ol,
+.md-tooltip__inner.md-typeset ul {
     text-align: left !important;
 }
+
 
 .satellite-button {
     border: 1px solid var(--tab-hover-color);

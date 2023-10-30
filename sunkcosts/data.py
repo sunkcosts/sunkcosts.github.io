@@ -3,7 +3,7 @@ import numpy as np
 from netCDF4._netCDF4 import Dataset
 
 
-def load_clean_lsa_slr_dataset(path):
+def load_clean_lsa_gmsl_dataset(path):
     lsa = pd.read_csv(path, skiprows=5)
     lsa = lsa.set_index("year")
     lsa = lsa.mean(axis=1)
@@ -13,9 +13,7 @@ def load_clean_lsa_slr_dataset(path):
 
 
 def load_clean_gsl_historical_dataset(path):
-    pnas = pd.read_excel(
-        "../data/pnas.1517056113.sd03.xls", sheet_name="GSL ML21", skiprows=2
-    )
+    pnas = pd.read_excel(path, sheet_name="GSL ML21", skiprows=2)
     pnas.drop(["1s"], axis=1, inplace=True)
     pnas.columns = ["year", "gmsl_mm"]
     return pnas

@@ -287,7 +287,7 @@ def showfig(fig):
     fig.show(renderer="notebook", config={"displayModeBar": False, "showTips": False})
 
 
-def plot_lsa_slr_data(data, xcol, ycol):
+def create_lsa_gmsl_scatterplot(data, xcol, ycol):
     data.columns = [xcol, ycol]
     fig = px.scatter(data, x=xcol, y=ycol, title=f"{ycol} vs. {xcol}", template=MINIMAL)
     fig.update_traces(
@@ -295,10 +295,11 @@ def plot_lsa_slr_data(data, xcol, ycol):
         selector=dict(mode="markers"),
     )
     fig.update_xaxes(range=[1993, 2023])
-    showfig(fig)
+    fig.update_layout(title_x=0.5)
+    return fig
 
 
-def plot_lsa_lsr_plus_pnas(lsa, pnas, xcol, ycol):
+def create_lsa_kopp_scatterplot(lsa, pnas, xcol, ycol):
     lsa.columns = [xcol, ycol]
     pnas.columns = [xcol, ycol]
     fig = go.Figure()
@@ -346,4 +347,5 @@ def plot_lsa_lsr_plus_pnas(lsa, pnas, xcol, ycol):
         visible="legendonly",
         selector=lambda l: l.name == "Industrial Revolution Begins (Click Here)",
     )
-    showfig(fig)
+    return fig
+    # showfig(fig)

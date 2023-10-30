@@ -3,6 +3,7 @@ from importlib import metadata
 from sunkcosts.io import save_toml
 
 
+# change name
 VERSION = metadata.version("sunklib")
 
 
@@ -18,6 +19,7 @@ AA_BOUNDS = {
 }
 
 PATH_HOME = Path.home()
+# change name
 PATH_CACHE = PATH_HOME / ".sunklib"
 
 PATH_PACKAGE = Path(__file__).parent
