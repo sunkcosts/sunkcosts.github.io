@@ -10,13 +10,15 @@ function openSearch() {
     search_input.focus()
     search_input.select()
     header.style["z-index"] = "10000";
+    search.style["z-index"] = "1000";
     search.style["opacity"] = "1";
     quick_search_open = true;
 }
 
 function closeSearch() {
     console.log("close search")
-    header.style["z-index"] = "0";
+    header.style["z-index"] = "999";
+    search["z-index"] = "0";
     search.style["opacity"] = "0";
     search_input.blur()
     quick_search_open = false;

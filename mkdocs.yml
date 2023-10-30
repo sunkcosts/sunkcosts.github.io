@@ -38,11 +38,11 @@ plugins:
     theme: dark
     include_source: false
     include_requirejs: true
-    show_input: false
-    no_input: True
-    remove_tag_config:
-      remove_input_tags:
-      - hide
+    # show_input: false
+    # no_input: True
+    # remove_tag_config:
+    #   remove_input_tags:
+    #   - hide
 
 markdown_extensions:
 - attr_list

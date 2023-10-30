@@ -145,8 +145,35 @@ Given the immense complexity and myriad factors influencing the sea level, creat
 
 Thankfully, smarter folks than us have already done this, namely: the IPCC. Of course, predicting the future is difficult if not impossible, so the IPCC provides us with a number of different scenarios in the form of SSPs (previously known as RCPs) through which we can evaluate the possible futures we face. We'll be focusing on SSP 126, 245, and 585, which we'll refer to as the 'best', 'medium', and 'worst' case scenarios.
 
+| SSP | Scenario | Scenario Details                                                                                |
+| --- | -------- | ----------------------------------------------------------------------------------------------- |
+| 119 | Best     | CO2 emissions cut to net zero around 2050.                                                      |
+| 245 | Medium   | CO2 emissions around current levels until 2050, then falling but not reaching net zero by 2100. |
+| 585 | Worst    | CO2 emissions triple by 2075.                                                                   |
+
+The data we will use to model the different scenarios comes from the [IPCC AR6](https://doi.org/10.5281/zenodo.6382554) report. It can be downloaded [here](https://zenodo.org/records/6382554/files/ar6.zip?download=1).
+
+It's important to note that our model $M_1$ (for cost) uses a model $M_2$ (for sea level rise) that is fit to the output of a model $M_3$ (that the IPCC created). More details on the $M_2$ to $M_3$ process can be found in this [[ar6_slp_model_methodology.ipynb|informal jupyter notebook]] documenting the process.
+
+
+<!--
+more links:
+
+- [Intergovernmental Panel on Climate Change](https://www.wikiwand.com/en/Intergovernmental_Panel_on_Climate_Change)
+- [SSPs](https://www.wikiwand.com/en/Shared_Socioeconomic_Pathways)
+- [RCPs](https://www.wikiwand.com/en/Representative_Concentration_Pathway)
+
+Notes:
+
+- sea_level_change units are millimeters
+- using medium confidence, high confidence was not an option
+- distribution fits are random code I wrote/copied from stackoverflow a while ago, going to assume it works
+ -->
 
 ### Property Value
+
+<!-- Starting with property, we can imagine that the property cost is a function of the value of the property lost. To estimate the value of the property lost, we need to know the value of property across areas in miami
+ -->
 
 Starting with property cost, we'll take the following premises as true. (1)
 { .annotate }
@@ -244,5 +271,16 @@ Before you begin, make sure you install the package utilities and configure any 
 <video style="width: 30vw;" controls loop>
    <source src="/file/output_high.mp4" type="video/mp4">
 </video>
+
+ -->
+
+ <!-- Notably a secondary claim we will also evaluate relates to the "growing concern about the potential impact on the city". Is concern actually growing? We will utilize various computational social science research tools in an attempt to find the answer.
+ -->
+
+
+<!-- TODO -->
+<!--
+- AR6 data contains regional data, should use this
+    - skipping right now to avoid dealing with netcdf format
 
  -->

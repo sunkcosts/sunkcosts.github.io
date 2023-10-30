@@ -31,22 +31,22 @@ save_html(
 # ! lsa scatter
 
 
-lsa = load_clean_lsa_gmsl_dataset(
-    "https://www.star.nesdis.noaa.gov/socd/lsa/SeaLevelRise/slr/slr_sla_gbl_free_txj1j2_90.csv"
-)
-lsa_scatter = create_lsa_gmsl_scatterplot(lsa, "Year", "Sea Level (mm)")
-save_html(
-    lsa_scatter,
-    PATH_SITE / "file/main/plotly.graph.lsa_gmsl_scatterplot.html",
-)
+# lsa = load_clean_lsa_gmsl_dataset(
+#     "https://www.star.nesdis.noaa.gov/socd/lsa/SeaLevelRise/slr/slr_sla_gbl_free_txj1j2_90.csv"
+# )
+# lsa_scatter = create_lsa_gmsl_scatterplot(lsa, "Year", "Sea Level (mm)")
+# save_html(
+#     lsa_scatter,
+#     PATH_SITE / "file/main/plotly.graph.lsa_gmsl_scatterplot.html",
+# )
 
-# ! lsa and kopp historical
+# # ! lsa and kopp historical
 
-pnas = load_clean_gsl_historical_dataset(PATH_WORKDIR / "data/pnas.1517056113.sd03.xls")
-lsa_kopp_scatter = create_lsa_kopp_scatterplot(
-    lsa, pnas, "Year (BCE/CE)", "Sea Level (mm)"
-)
-save_html(
-    lsa_kopp_scatter,
-    PATH_SITE / "file/main/plotly.graph.lsa_kopp_scatterplot.html",
-)
+# pnas = load_clean_gsl_historical_dataset(PATH_WORKDIR / "data/pnas.1517056113.sd03.xls")
+# lsa_kopp_scatter = create_lsa_kopp_scatterplot(
+#     lsa, pnas, "Year (BCE/CE)", "Sea Level (mm)"
+# )
+# save_html(
+#     lsa_kopp_scatter,
+#     PATH_SITE / "file/main/plotly.graph.lsa_kopp_scatterplot.html",
+# )
