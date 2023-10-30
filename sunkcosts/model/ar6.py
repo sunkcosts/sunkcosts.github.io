@@ -35,6 +35,7 @@ class AR6SeaLevelProjection(BaseModel):
         datapath = Path(
             f"{str(basepath)}/{confidence}_confidence/{scenario}/total_{scenario}_{confidence}_confidence_values.nc"
         )
+        raise
 
     @staticmethod
     def load(confidence: str, scenario: str) -> AR6SeaLevelProjection:
