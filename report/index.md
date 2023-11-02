@@ -93,7 +93,7 @@ We recognize that not everyone will have time to read the full report. According
 
 <div class="grid-container-3" style = "margin-top: -0.6em; margin-bottom: 0em;">
     <div class="grid-item">
-        <div class="admonition dollar-red">
+        <div class="admonition dollar-green">
             <p class="admonition-title">~50 Billion</p>
         </div>
         <video style="width: 30vw;" controls>
@@ -107,7 +107,7 @@ We recognize that not everyone will have time to read the full report. According
         <p><i>Visualization will be included in complete version</i></p>
     </div>
     <div class="grid-item">
-        <div class="admonition dollar-green">
+        <div class="admonition dollar-red">
             <p class="admonition-title">~900 Billion</p>
         </div>
         <video style="width: 30vw;" controls>
